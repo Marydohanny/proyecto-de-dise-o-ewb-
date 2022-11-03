@@ -1,0 +1,138 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-image: linear-gradient(#11011b, #18022d, #1a0241, #2b0c59, #492877 );
+    
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+header{
+    display: flex;
+    background-color: #202020;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large ;
+}
+.logo{
+    align-items: center;
+    display: flex;
+    padding-right: 70px;
+}
+.logo img{
+    height: 70px;
+    display: flex;
+    padding: 0px 0px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 25px;
+}
+nav a:hover{
+    color: blueviolet ;
+}
+
+/*<!--esto es para el response en android --> */
+@media (max-width:680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+/*aqui termina el diseño del nav-bar*/
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+/*estilo de la barra de busqueda*/
+  .search-bar{
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    margin: auto auto;
+    flex: 1;
+    float: right;
+  }
+  .search-bar:focus-within{
+    border: solid 1px blueviolet;
+    box-shadow: 3px 3px 3px blueviolet;
+  }
+  .search-bar input{
+    border: none;
+    outline: none;
+    background-color: #202020;
+    color: #ccc;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    flex: auto;
+  }
+  .search-bar actions{
+    display: flex;
+    gap: 5px;
+  }
+  .search-bar .actions button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #ccc;
+  }
+  .search-bar .actions button:hover{
+    color: blueviolet;
+  }
+  /*Aqui termina el diseño del buscador */
+
+  /*aqui empieza el css del relleno del body*/
+.img{
+  height: 210px;
+  width: 220px;
+  padding: px 15px;
+  float: left;
+  display: flex;
+}
+.img:hover{
+  background-color: #1a0241;
+  border-radius: 30px;
+}
+/*aqui emmpieza la edicion del footer*/
+footer
+{
+  margin-top:50px;
+  width:100%;
+  height:200px;
+  background-color:red;
+}
+
